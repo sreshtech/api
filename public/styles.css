@@ -1,0 +1,187 @@
+/* Global Styles */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/p1.png'); /* Add gradient overlay */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff; /* Set default text color to white for better contrast */
+}
+
+/* Header Styles */
+header {
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+  width: 100%;
+  height: 70px; /* Slightly taller header */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Enhance shadow */
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+header:hover {
+  background-color: rgba(255, 255, 255, 1); /* Full opacity on hover */
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.logo img {
+  height: 50px; /* Larger logo */
+  width: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Enhance shadow */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px; /* Larger font size */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+nav a:hover {
+  color: #ff3f6c; /* More vibrant hover color */
+  text-shadow: 0 0 10px rgba(255, 63, 108, 0.5); /* Enhance text shadow */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Container Styles */
+.container {
+  width: 90%; /* Use 90% of the available width */
+  max-width: 700px; /* Maximum width */
+  background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+  padding: 30px; /* More padding */
+  border-radius: 15px; /* Larger border radius */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Enhance shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-10px); /* More pronounced lift on hover */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Design Input Styles */
+#design-input {
+  width: 100%;
+  height: 150px; /* Taller input area */
+  margin-bottom: 20px;
+  padding: 15px; /* More padding */
+  border: 1px solid #e0e0e0;
+  border-radius: 10px; /* Larger border radius */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1); /* Enhance shadow */
+}
+
+#design-input:focus {
+  border-color: #ff3f6c;
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 63, 108, 0.5); /* Enhance focus shadow */
+}
+
+/* Design Button Styles */
+#design-button {
+  display: block;
+  width: 100%;
+  padding: 15px; /* More padding */
+  background: #ff3f6c;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px; /* Larger border radius */
+  cursor: pointer;
+  font-size: 18px; /* Larger font size */
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#design-button:hover {
+  background-color: #e6325b;
+  transform: translateY(-5px); /* More pronounced lift on hover */
+}
+
+/* Design Output Styles */
+#design-output {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+  border-radius: 10px; /* Larger border radius */
+  border: 1px solid #e0e0e0;
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1); /* Enhance shadow */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header {
+    height: 60px;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  #design-button {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  #design-input {
+    height: 120px;
+  }
+}
+/* Download Button Styles */
+#download-design {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  right: 10px; /* Adjust as needed */
+  transform: translateY(-50%); /* Adjust to center vertically */
+  padding: 8px 12px; /* Smaller padding for a smaller button */
+  background: #ff3f6c;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px; /* Smaller font size */
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 100; /* Ensure it stays on top */
+}
+
+#download-design:hover {
+  background-color: #e6325b;
+  transform: translateY(-50%) translateY(-2px); /* Slight lift on hover */
+}
